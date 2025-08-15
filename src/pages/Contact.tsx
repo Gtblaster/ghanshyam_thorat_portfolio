@@ -7,6 +7,11 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { useState } from "react";
+import emailjs from 'emailjs-com';
+
+const SERVICE_ID = 'your_service_id';
+const TEMPLATE_ID = 'your_template_id';
+const USER_ID = 'your_user_id';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -26,16 +31,32 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
-    // Handle form submission logic here
+    emailjs.send(
+      SERVICE_ID,
+      TEMPLATE_ID,
+      {
+        from_name: formData.name,
+        from_email: formData.email,
+        subject: formData.subject,
+        message: formData.message,
+        to_email: 'thoratghanshyam4@gmail.com'
+      },
+      USER_ID
+    )
+    .then((result) => {
+      alert('Message sent successfully!');
+      setFormData({ name: "", email: "", subject: "", message: "" });
+    }, (error) => {
+      alert('Service Currently Unavailable Try Another Method');
+    });
   };
 
   const contactInfo = [
     {
       icon: Mail,
       label: "Email",
-      value: "ghanshyam.thorat@email.com",
-      link: "mailto:ghanshyam.thorat@email.com"
+      value: "thoratghanshyam4@gmail.com",
+      link: "mailto:thoratghanshyam4@gmail.com"
     },
     {
       icon: Linkedin,
@@ -52,7 +73,7 @@ const Contact = () => {
     {
       icon: MapPin,
       label: "Location",
-      value: "India",
+      value: "Maharashtra,India",
       link: null
     }
   ];
@@ -220,6 +241,14 @@ const Contact = () => {
                   <Button 
                     size="lg" 
                     className="w-full bg-gradient-to-r from-purple-500 to-pink-600 hover:from-purple-600 hover:to-pink-700 text-white flex items-center gap-2"
+                    onClick={() => {
+                      const link = document.createElement('a');
+                      link.href = '/resume.pdf';
+                      link.download = 'Ghanshyam_Thorat_Resume.pdf';
+                      document.body.appendChild(link);
+                      link.click();
+                      document.body.removeChild(link);
+                    }}
                   >
                     <Download size={20} />
                     Download Resume (PDF)
@@ -265,7 +294,7 @@ const Contact = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/projects">
-                <Button size="lg" variant="outline" className="border-slate-600 text-white hover:bg-slate-800">
+                <Button size="lg" variant="outline" className="border-slate-600 text-black hover:bg-slate-800">
                   View My Work
                 </Button>
               </Link>

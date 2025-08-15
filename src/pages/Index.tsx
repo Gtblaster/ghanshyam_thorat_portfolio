@@ -2,6 +2,7 @@
 import { Link } from "react-router-dom";
 import { ArrowDown, Github, Linkedin, Mail, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 const Index = () => {
   return (
@@ -42,9 +43,16 @@ const Index = () => {
             <div className="flex justify-center md:justify-start">
               <div className="relative">
                 <div className="w-80 h-80 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 p-1">
-                  <div className="w-full h-full rounded-full bg-slate-800 flex items-center justify-center">
-                    <User size={120} className="text-slate-400" />
-                  </div>
+                  <Avatar className="w-full h-full">
+                    <AvatarImage 
+                      src="/profile-image.jpg" 
+                      alt="Ghanshyam Thorat - AI/ML & Cybersecurity Expert"
+                      className="rounded-full object-cover"
+                    />
+                    <AvatarFallback className="w-full h-full rounded-full bg-slate-800 flex items-center justify-center">
+                      <User size={120} className="text-slate-400" />
+                    </AvatarFallback>
+                  </Avatar>
                 </div>
                 <div className="absolute -bottom-4 -right-4 w-20 h-20 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full flex items-center justify-center">
                   <span className="text-white font-bold text-lg">AI</span>
@@ -63,13 +71,13 @@ const Index = () => {
               
               <div className="text-xl text-slate-300 mb-8 leading-relaxed">
                 <p className="mb-4">
-                  Pursuing B.Tech in AI & ML | Ex-Intern in Cybersecurity at Cyber Sanskar
+                  Pursuing B.Tech in AI & ML | Ex-Intern in Cybersecurity | Artificial Intelligence & Machine Learning | Java Developer.
                 </p>
                 <p className="mb-4">
-                  TryHackMe Top Ranker | Hacker at Bugcrowd & HackerOne
+                  TryHackMe Top 4% | Hacker at Bugcrowd & HackerOne | AI/ML Enthusiast
                 </p>
                 <p>
-                  Diploma in Information Technology | Developer | Cybersecurity Enthusiast
+                  Diploma in Information Technology | Developer | Cybersecurity Enthusiast | AI/ML Enthusiast
                 </p>
               </div>
 
@@ -80,7 +88,7 @@ const Index = () => {
                   </Button>
                 </Link>
                 <Link to="/projects">
-                  <Button size="lg" variant="outline" className="border-slate-600 text-white hover:bg-slate-800">
+                  <Button size="lg" variant="outline" className="border-slate-600 text-black hover:bg-slate-800">
                     View Projects
                   </Button>
                 </Link>
@@ -97,7 +105,9 @@ const Index = () => {
                   <Linkedin size={24} />
                 </a>
                 <a 
-                  href="#" 
+                  href="https://github.com/Gtblaster" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
                   className="text-slate-400 hover:text-white transition-colors"
                 >
                   <Github size={24} />
@@ -125,15 +135,15 @@ const Index = () => {
               <div className="text-slate-300">Projects</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-blue-400 mb-2">2+</div>
+              <div className="text-3xl font-bold text-blue-400 mb-2">4+</div>
               <div className="text-slate-300">Internships</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-purple-400 mb-2">Top</div>
+              <div className="text-3xl font-bold text-purple-400 mb-2">Top 4%</div>
               <div className="text-slate-300">TryHackMe Rank</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-green-400 mb-2">AI/ML</div>
+              <div className="text-3xl font-bold text-green-400 mb-2">AI/ML(Cybersecurity)</div>
               <div className="text-slate-300">Specialization</div>
             </div>
           </div>

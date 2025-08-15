@@ -10,10 +10,10 @@ const Education = () => {
     {
       degree: "Bachelor of Technology (B.Tech)",
       field: "Artificial Intelligence & Machine Learning",
-      institution: "Engineering College",
+      institution: "Adarsh Institute of Technology and Research Center.Vita",
       status: "Currently Pursuing",
-      duration: "2022 - 2026",
-      location: "India",
+      duration: "2024 - 2027",
+      location: "Maharashtra,India",
       description: "Comprehensive program focusing on AI/ML fundamentals, advanced algorithms, neural networks, and practical applications in real-world scenarios.",
       coursework: [
         "Machine Learning Algorithms",
@@ -28,28 +28,28 @@ const Education = () => {
         "Operating Systems"
       ],
       projects: [
-        "AI-powered recommendation system",
-        "Computer vision object detection",
-        "Natural language sentiment analysis",
-        "Predictive analytics dashboard"
+        "Email Spam Detection",
+        "Firewall System",
+       // "Natural language sentiment analysis",
+       // "Predictive analytics dashboard"
       ],
       achievements: [
-        "Consistent academic performance",
+        "Participated in Google Developer Group Hackathon",
         "Active participation in AI/ML workshops",
-        "Member of technology clubs",
-        "Regular contribution to coding competitions"
+        "Google Workshop On AI Partcipaetion",
+       // "Google Workshop On AI Partcipaetion"
       ]
     },
     {
       degree: "Diploma",
       field: "Information Technology", 
-      institution: "Polytechnic Institute",
+      institution: "Mahavir Polytechnic.Nashik",
       status: "Completed",
-      duration: "2019 - 2022",
-      location: "India",
+      duration: "2022 - 2024",
+      location: "Maharashtra,India",
       description: "Strong foundation in information technology concepts, programming fundamentals, and practical software development skills.",
       coursework: [
-        "Programming Fundamentals (C, C++, Java)",
+        "Programming Fundamentals (Java,Python)",
         "Web Development (HTML, CSS, JavaScript)",
         "Database Management",
         "Computer Networks",
@@ -61,16 +61,15 @@ const Education = () => {
         "Project Management"
       ],
       projects: [
-        "Web-based inventory management system",
-        "Student information management portal",
-        "Basic e-commerce website",
-        "Network security analysis"
+        "Music Library Like Spotify",
+        "Intelligent CCTV Surveillance and Alert System",
+       // "Basic e-commerce website",
+       // "Network security analysis" 
       ],
       achievements: [
         "Graduated with distinction",
-        "Best project award",
-        "Technical club leadership role",
-        "Participated in inter-college competitions"
+        "Top Ranker In Olympiad Exam On Cyber Security",
+        "NASA & Flipkart Hall Of Fame"
       ]
     }
   ];
@@ -350,7 +349,7 @@ const Education = () => {
                 </Button>
               </Link>
               <Link to="/contact">
-                <Button size="lg" variant="outline" className="border-slate-600 text-white hover:bg-slate-800">
+                <Button size="lg" variant="outline" className="border-slate-600 text-black hover:bg-slate-800">
                   Get In Touch
                 </Button>
               </Link>

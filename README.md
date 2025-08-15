@@ -1,73 +1,69 @@
-# Welcome to your Lovable project
+# Ghanshyam Thorat - AI/ML & Cybersecurity Portfolio
 
-## Project info
+## About Me
 
-**URL**: https://lovable.dev/projects/0c210f0b-5fb2-49d5-a098-4355eb804ca1
+Welcome to my portfolio! I'm Ghanshyam Thorat, a B.Tech AI/ML student and cybersecurity enthusiast. I'm passionate about artificial intelligence, machine learning, and cybersecurity, with experience as a TryHackMe Top Ranker and Ex-Intern at Cyber Sanskar.
 
-## How can I edit this code?
+## 🚀 Technologies & Skills
 
-There are several ways of editing your application.
+- **Programming Languages**: Python, JavaScript, TypeScript, C++
+- **AI/ML**: TensorFlow, PyTorch, Scikit-learn, OpenCV
+- **Cybersecurity**: Penetration Testing, Network Security, Ethical Hacking
+- **Web Development**: React, Node.js, Express.js
+- **Tools**: TryHackMe, Burp Suite, Wireshark, Metasploit
 
-**Use Lovable**
+## 🏆 Achievements
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/0c210f0b-5fb2-49d5-a098-4355eb804ca1) and start prompting.
+- TryHackMe Top Ranker
+- Ex-Intern at Cyber Sanskar
+- B.Tech AI/ML Student
+- Active participant in cybersecurity competitions
 
-Changes made via Lovable will be committed automatically to this repo.
+## 📁 Project Structure
 
-**Use your preferred IDE**
+This portfolio is built with modern web technologies:
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- **Frontend**: React with TypeScript
+- **Styling**: Tailwind CSS with shadcn/ui components
+- **Build Tool**: Vite
+- **Deployment**: Ready for deployment on various platforms
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 🛠️ Local Development
 
-Follow these steps:
+To run this portfolio locally:
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+```bash
+# Clone the repository
+git clone <YOUR_REPOSITORY_URL>
+cd ghanshyam-ai-portfolio-showcase
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Install dependencies
+npm install
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+## 📧 Contact
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+- **Email**: [Your Email]
+- **LinkedIn**: [Your LinkedIn]
+- **GitHub**: [Your GitHub]
+- **Twitter**: @ghanshyam_thorat
 
-**Use GitHub Codespaces**
+## 🚀 Deployment
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+This portfolio can be deployed on various platforms:
 
-## What technologies are used for this project?
+- **Vercel**: Connect your GitHub repository
+- **Netlify**: Drag and drop the build folder
+- **GitHub Pages**: Use GitHub Actions for automatic deployment
+- **Firebase Hosting**: Use Firebase CLI
 
-This project is built with:
+## 📝 License
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+This project is open source and available under the [MIT License](LICENSE).
 
-## How can I deploy this project?
+---
 
-Simply open [Lovable](https://lovable.dev/projects/0c210f0b-5fb2-49d5-a098-4355eb804ca1) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+*Built with ❤️ using React, TypeScript, and Tailwind CSS*

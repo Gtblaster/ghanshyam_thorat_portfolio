@@ -10,8 +10,8 @@ const Internships = () => {
     {
       company: "Cyber Sanskar",
       role: "Cybersecurity Intern",
-      duration: "6 months",
-      location: "Remote",
+      duration: "12 weeks",
+      location: "Gangapur Road, Nashik, Maharashtra",
       type: "Internship",
       status: "Completed",
       description: "Gained hands-on experience in cybersecurity practices, ethical hacking methodologies, and security assessment protocols. Worked on real-world security challenges and contributed to vulnerability assessment projects.",
@@ -35,16 +35,123 @@ const Internships = () => {
       achievements: [
         "Identified critical vulnerabilities in client systems",
         "Contributed to security awareness training materials",
-        "Received positive feedback for analytical skills",
+        "Received a Hall of Fame NASA & Flipkart",
         "Completed advanced cybersecurity certification training"
       ]
-    }
+    },
+    {
+      company: "VirtualNexa",
+        role: "Java Developer Intern",
+        duration: "1 month",
+        location: "Remote",
+        type: "Internship",
+        status: "Completed",
+        description: "Worked as a Java Developer Intern at VirtualNexa, where I gained hands-on experience in Java programming, web development, and software development methodologies. I worked on various projects, including a web application and a desktop application. I also learned about the software development lifecycle and the importance of software testing and debugging.",
+        responsibilities: [
+          "Participated in code reviews and debugging sessions with the development team",
+          "Collaborated using Git and GitHub for version control and project tracking",
+          "Build a multiple projects using Java, Spring Boot",
+
+        ],
+        learnings: [
+          "Object-Oriented Programming (OOP) concepts and their implementation in Java",
+          "Exception handling, multithreading, and file handling in Java",
+          "Real-world collaboration using Git for version control and teamwork",
+          
+        ],
+        technologies: ["Java", "Spring Boot", "Git", "Github", "Intellij IDEA"],
+        achievements: [
+          "Successfully developed and deployed a Java-based mini project within the internship period",
+          "Contributed to documentation and code structure improvements in existing projects",
+        ]
+      },
+
+      {
+        company: "RacksonsIT Developer Pvt. Ltd.",
+          role: "Data Science Using AI/ML Intern",
+          duration: "1 month",
+          location: "Remote",
+          type: "Internship",
+          status: "Completed",
+          description: "Worked as a DATA Science Intern at RacksonsIT Developer Pvt. Ltd., where I gained hands-on experience in Data Science, AI/ML, and software development methodologies. I worked on various projects, including a web application and a desktop application. I also learned about the software development lifecycle and the importance of software testing and debugging.",
+          responsibilities: [
+            "Worked on various projects using AI/ML and Data Science",
+            "Build a multiple projects using Python and Machine Learning",
+            "Build a multiple projects using Python, Java, SQL, and Machine Learning",
+            "Collected, cleaned, and preprocessed data for model training and evaluation"
+  
+          ],
+          learnings: [
+            "Basics of AI model deployment and industry use cases",
+            "Data visualization with Matplotlib and Seaborn",
+            "Core ML algorithms: Linear Regression, Decision Trees, SVM, K-Means Clustering",
+            
+          ],
+          technologies: ["Python", "Machine Learning", "Data Science", "AI/ML", "Data Visualization"],
+          achievements: [
+            "Successfully developed and deployed a AI/ML project within the internship period",
+            "Contributed to documentation and code structure improvements in existing projects",
+          ]
+        },
+        {
+          company: "Microsoft With Edunet Foundation",
+            role: "Foundations of AI/ML Intern",
+            duration: "1 month",
+            location: "Remote",
+            type: "Internship",
+            status: "Completed",
+            description: "Worked as a Foundations of AI/ML Intern at Microsoft With Edunet Foundation, where I gained hands-on experience in AI/ML, and software development methodologies. I worked on various projects, including a web application and a desktop application. I also learned about the software development lifecycle and the importance of software testing and debugging.",
+            responsibilities: [
+              "Worked on various projects using AI/ML and Data Science",
+              "Build a multiple projects using Python and Machine Learning",
+              "Attended expert-led sessions on AI industry trends and career opportunities",
+              "Explored real-world applications of AI in various industries (healthcare, finance, education)"
+    
+            ],
+            learnings: [
+              "Foundations of AI/ML and their implementation in Python",
+              "Real-world applications of AI in various industries",
+              "Industry trends and career opportunities in AI",
+              "Core AI/ML concepts: classification, regression, and clustering"
+            ],
+            technologies: ["Python", "Machine Learning", "Data Science", "AI/ML", "Data Visualization"],
+            achievements: [
+              "Successfully developed and deployed a AI/ML project within the internship period",
+              "Contributed to documentation and code structure improvements in existing projects",
+            ]
+          },
+          {
+            company: "VirtualNexa",
+              role: "Java Developer Intern",
+              duration: "6 weeks",
+              location: "Remote",
+              type: "Internship",
+              status: "Completed",
+              description: "Worked as a Java Developer Intern at VirtualNexa, where I gained hands-on experience in Java programming, web development, and software development methodologies. I worked on various projects, including a web application and a desktop application. I also learned about the software development lifecycle and the importance of software testing and debugging.",
+              responsibilities: [
+                "Participated in code reviews and debugging sessions with the development team",
+                "Collaborated using Git and GitHub for version control and project tracking",
+                "Build a multiple projects using Java, Spring Boot",
+      
+              ],
+              learnings: [
+                "Object-Oriented Programming (OOP) concepts and their implementation in Java",
+                "Exception handling, multithreading, and file handling in Java",
+                "Real-world collaboration using Git for version control and teamwork",
+                
+              ],
+              technologies: ["Java", "Spring Boot", "Git", "Github", "Intellij IDEA"],
+              achievements: [
+                "Successfully developed and deployed a Java-based mini project within the internship period",
+                "Contributed to documentation and code structure improvements in existing projects",
+              ]
+            }
   ];
 
   const platforms = [
     {
       name: "TryHackMe",
-      achievement: "Top Ranker",
+      achievement: "Top 4%",
       description: "Achieved top rankings through consistent performance in cybersecurity challenges and learning paths",
       skills: ["Penetration Testing", "Digital Forensics", "Web Application Security", "Network Security"]
     },
@@ -96,8 +203,8 @@ const Internships = () => {
               Professional <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Experience</span>
             </h1>
             <p className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
-              My journey through internships and professional development in cybersecurity, 
-              gaining practical experience and contributing to real-world security challenges.
+              My journey through internships and professional development in Cybersecurity/AIML
+              with gaining practical experience and contributing to real-world security challenges with Artificial Intelligence.
             </p>
           </div>
 
@@ -197,6 +304,9 @@ const Internships = () => {
             ))}
           </div>
 
+
+
+
           {/* Platform Achievements */}
           <div className="mb-16">
             <h2 className="text-3xl font-bold text-white mb-8">Platform Achievements</h2>
@@ -248,7 +358,7 @@ const Internships = () => {
                 </Button>
               </Link>
               <Link to="/projects">
-                <Button size="lg" variant="outline" className="border-slate-600 text-white hover:bg-slate-800">
+                <Button size="lg" variant="outline" className="border-slate-600 text-black hover:bg-slate-800">
                   View My Projects
                 </Button>
               </Link>

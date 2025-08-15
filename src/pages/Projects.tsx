@@ -1,6 +1,6 @@
 
 import { Link } from "react-router-dom";
-import { ArrowLeft, Github, ExternalLink, Code, Brain, Shield, Database } from "lucide-react";
+import { ArrowLeft, Github, ExternalLink, Code, Brain, Shield, Database, Music } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -8,58 +8,63 @@ import { Badge } from "@/components/ui/badge";
 const Projects = () => {
   const projects = [
     {
-      title: "AI-Powered Threat Detection System",
-      description: "Developed a machine learning model to detect and classify cybersecurity threats in real-time using natural language processing and anomaly detection algorithms.",
-      technologies: ["Python", "TensorFlow", "scikit-learn", "Flask", "MongoDB"],
-      category: "AI/ML",
+      title: "Email Spam Detaction Using AI",
+      description: "Email Spam Detection Using AI automatically identifies and filters unwanted or harmful emails by analyzing patterns, text, and sender details using machine learning and NLP, keeping your inbox safe and organized.",
+      technologies: ["Python", "TensorFlow", "scikit-learn", "Flask"],
+      category: "AIML/CyberSecurity",
       icon: Brain,
       status: "Completed",
-      highlights: ["95% accuracy in threat detection", "Real-time processing", "Scalable architecture"]
+      highlights: ["95% accuracy in threat detection", "Real-time processing", "Scalable architecture"],
+      githubUrl: "https://github.com/yourusername/email-spam-detection"
     },
     {
-      title: "Vulnerability Assessment Automation",
-      description: "Created an automated vulnerability scanning tool that integrates with multiple security frameworks to provide comprehensive security assessments.",
-      technologies: ["Python", "Nmap", "OWASP ZAP", "Docker", "PostgreSQL"],
-      category: "Cybersecurity",
+      title: "Music Libary Website",
+      description: "Music Library Website is an online platform that lets users browse, search, and stream songs, albums, and playlists, offering easy access to music collections anytime, anywhere.",
+      technologies: ["HTML", "Java", "Javascript"],
+      category: "Web Development",
+      icon: Music,
+      status: "Completed",
+      highlights: ["Easy Access", "Simple UI", "Download Access Song"],
+      githubUrl: "https://github.com/yourusername/music-library"
+    },
+    {
+      title: "SMS Spam Detection",
+      description: "SMS Spam Detection is a system that automatically identifies and filters unwanted or fraudulent text messages using machine learning and NLP techniques.",
+      technologies: ["Python", "spaCy", "BERT", "React", "Node.js"],
+      category: "NLP/CyberSecurity",
       icon: Shield,
       status: "In Progress",
-      highlights: ["Automated scanning", "Multi-framework integration", "Detailed reporting"]
+      highlights: ["95% accuracy in threat detection", "Real-time processing", "Scalable architecture"],
+      githubUrl: "https://github.com/yourusername/sms-spam-detection"
     },
     {
-      title: "Natural Language Query System",
-      description: "Built an intelligent query system that allows users to interact with databases using natural language, powered by advanced NLP models.",
-      technologies: ["Python", "spaCy", "BERT", "React", "Node.js"],
-      category: "NLP",
-      icon: Database,
-      status: "Completed",
-      highlights: ["Natural language interface", "Multi-database support", "High accuracy parsing"]
-    },
-    {
-      title: "Ethical Hacking Toolkit",
-      description: "Comprehensive penetration testing toolkit with automated reconnaissance, vulnerability assessment, and reporting capabilities.",
+      title: "Simple AI Based Firewall", 
+      description: "Simple AI Based Firewall is a system that automatically detects and blocks malicious traffic using machine learning and AI techniques.",
       technologies: ["Python", "Bash", "Metasploit", "Burp Suite", "SQLMap"],
-      category: "Security Tools",
-      icon: Code,
-      status: "Completed",
-      highlights: ["Automated penetration testing", "Comprehensive reporting", "Modular architecture"]
+      category: "AI/CyberSecurity",
+      icon: Shield,
+      status: "In Progress",
+      highlights: ["Automated penetration testing", "Comprehensive reporting", "Modular architecture"],
+      githubUrl: "https://github.com/yourusername/ai-firewall"
     },
     {
-      title: "AI Model Deployment Platform",
-      description: "Developed a cloud-based platform for deploying and managing machine learning models with auto-scaling and monitoring capabilities.",
-      technologies: ["Docker", "Kubernetes", "FastAPI", "Redis", "Prometheus"],
-      category: "MLOps",
+      title: "AI Base Fram Managment Application",
+      description: "AI Base Fram Managment Application is a system that manages the plants disease detection using AI base framework using machine learning and AI techniques.",
+      technologies: ["Python", "TensorFlow", "scikit-learn", "Flask"],
+      category: "AIML/CyberSecurity",
       icon: Brain,
-      status: "In Progress",
-      highlights: ["Auto-scaling", "Real-time monitoring", "Model versioning"]
+      status: "Completed",
+      highlights: ["Auto-scaling", "Real-time monitoring", "Model versioning"],
+      githubUrl: "https://github.com/yourusername/farm-management"
     }
   ];
 
   const getCategoryColor = (category: string) => {
     switch (category) {
-      case "AI/ML": return "bg-blue-500/20 text-blue-400 border-blue-500/30";
-      case "Cybersecurity": return "bg-red-500/20 text-red-400 border-red-500/30";
-      case "NLP": return "bg-green-500/20 text-green-400 border-green-500/30";
-      case "Security Tools": return "bg-orange-500/20 text-orange-400 border-orange-500/30";
+      case "AIML/CyberSecurity": return "bg-blue-500/20 text-blue-400 border-blue-500/30";
+      case "Web Development": return "bg-red-500/20 text-red-400 border-red-500/30";
+      case "NLP/CyberSecurity": return "bg-green-500/20 text-green-400 border-green-500/30";
+      case "AI/CyberSecurity": return "bg-orange-500/20 text-orange-400 border-orange-500/30";
       case "MLOps": return "bg-purple-500/20 text-purple-400 border-purple-500/30";
       default: return "bg-gray-500/20 text-gray-400 border-gray-500/30";
     }
@@ -156,13 +161,14 @@ const Projects = () => {
 
                   {/* Action Buttons */}
                   <div className="flex gap-3 pt-4">
-                    <Button size="sm" variant="outline" className="border-slate-600 text-white hover:bg-slate-700 flex items-center gap-2">
+                    <Button 
+                      size="sm" 
+                      variant="outline" 
+                      className="border-slate-600 text-black hover:bg-slate-700 flex items-center gap-2"
+                      onClick={() => window.open(project.githubUrl, '_blank')}
+                    >
                       <Github size={16} />
                       Code
-                    </Button>
-                    <Button size="sm" className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white flex items-center gap-2">
-                      <ExternalLink size={16} />
-                      Demo
                     </Button>
                   </div>
                 </CardContent>
@@ -175,18 +181,24 @@ const Projects = () => {
             <h3 className="text-2xl font-bold text-white mb-4">Interested in My Work?</h3>
             <p className="text-slate-300 mb-6">
               Check out my GitHub for more projects or get in touch to discuss collaboration opportunities.
+              <br />
+              We can also use AI Complement or AI help in my project for solving real world problems.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white flex items-center gap-2">
-                <Github size={20} />
-                View GitHub
-              </Button>
-              <Link to="/contact">
-                <Button size="lg" variant="outline" className="border-slate-600 text-white hover:bg-slate-800">
-                  Contact Me
-                </Button>
-              </Link>
-            </div>
+                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
+               <Button 
+                 size="lg" 
+                 className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white flex items-center gap-2"
+                 onClick={() => window.open("https://github.com/Gtblaster", '_blank')}
+               >
+                 <Github size={20} />
+                 View GitHub
+               </Button>
+               <Link to="/contact">
+                 <Button size="lg" variant="outline" className="border-slate-600 text-black hover:bg-slate-800">
+                   Contact Me
+                 </Button>
+               </Link>
+             </div>
           </div>
         </div>
       </div>
